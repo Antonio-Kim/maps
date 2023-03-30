@@ -1,16 +1,7 @@
 /// <reference types="@types/google.maps" />
-import { User } from './User';
-import { Company } from './Company';
+import { Mappable } from "./Mappable";
 
-// Instructions to every other class
-// on hwo they can be an argument to 'addMarker'
-interface Mappable {
-  location: {
-    lat: number;
-    lng: number;
-  };
-  markerContent(): string;
-}
+
 
 export class CustomMaps {
   private googleMap: google.maps.Map;
